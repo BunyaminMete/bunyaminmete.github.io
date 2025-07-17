@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spades VIP - Official Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', 'Playpen Sans', sans-serif;
+      background: linear-gradient(135deg, #181c2f 0%, #232946 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    .main-card {
+      background: rgba(30, 34, 56, 0.95);
+      border-radius: 32px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+      padding: 48px 32px 32px 32px;
+      max-width: 420px;
+      width: 95vw;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      margin-top: 40px;
+    }
+    .card-logo {
+      width: 90px;
+      margin-bottom: 18px;
+      filter: drop-shadow(0 2px 8px #0008);
+    }
+    h1 {
+      font-family: 'Montserrat', 'Playpen Sans', sans-serif;
+      font-size: 2.2rem;
+      margin: 0 0 10px 0;
+      color: #FDEA24;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #b3b8d0;
+      margin-bottom: 18px;
+      font-weight: 400;
+    }
+    .appstore-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #fff;
+      color: #232946;
+      font-weight: 700;
+      border-radius: 12px;
+      padding: 12px 22px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin: 18px 0 24px 0;
+      box-shadow: 0 2px 8px 0 #0002;
+      transition: background 0.2s, color 0.2s, transform 0.1s;
+      gap: 10px;
+    }
+    .appstore-btn:hover {
+      background: #FDEA24;
+      color: #181c2f;
+      transform: translateY(-2px) scale(1.03);
+    }
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin: 24px 0 18px 0;
+    }
+    .feature {
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 1rem;
+      color: #f3f3f3;
+      box-shadow: 0 1px 4px 0 #0001;
+    }
+    .feature-icon {
+      font-size: 1.5rem;
+      width: 32px;
+      text-align: center;
+      opacity: 0.85;
+    }
+    .contact {
+      margin-top: 18px;
+      font-size: 1rem;
+      color: #FDEA24;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      word-break: break-all;
+    }
+    .card-bg {
+      position: absolute;
+      top: -60px;
+      right: -40px;
+      width: 180px;
+      opacity: 0.07;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .card-bg2 {
+      position: absolute;
+      bottom: -60px;
+      left: -40px;
+      width: 120px;
+      opacity: 0.09;
+      z-index: 0;
+      pointer-events: none;
+      transform: rotate(-12deg);
+    }
+    @media (max-width: 600px) {
+      .main-card { padding: 32px 8vw 24px 8vw; }
+      h1 { font-size: 1.4rem; }
+      .subtitle { font-size: 0.98rem; }
+      .feature { font-size: 0.95rem; }
+      .card-logo { width: 64px; }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Playing_card_spade_A.svg/1024px-Playing_card_spade_A.svg.png" alt="Card Background" class="card-bg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Playing_card_spade_Q.svg/512px-Playing_card_spade_Q.svg.png" alt="Card Background 2" class="card-bg2">
+  <div class="main-card">
+    <img src="spadeslogo.webp" alt="Spades VIP Logo" class="card-logo">
+    <h1>Spades VIP – Card Game</h1>
+    <div class="subtitle">The Ultimate Offline Spades Experience<br>by <strong>Bünyamin Mete</strong></div>
+    <a class="appstore-btn" href="https://apps.apple.com/us/app/spades-vip-card-game/id6746369384" target="_blank" rel="noopener">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.564 13.568c-.03-3.18 2.594-4.7 2.71-4.77-1.48-2.16-3.78-2.46-4.59-2.49-1.95-.2-3.81 1.14-4.8 1.14-.99 0-2.52-1.12-4.15-1.09-2.13.03-4.1 1.24-5.19 3.15-2.22 3.85-.57 9.54 1.59 12.67 1.06 1.53 2.32 3.25 3.98 3.19 1.6-.07 2.2-1.03 4.13-1.03 1.93 0 2.47 1.03 4.14.99 1.72-.03 2.8-1.56 3.85-3.1 1.23-1.8 1.73-3.56 1.75-3.65-.04-.02-3.34-1.28-3.37-5.08zm-3.36-9.25c.87-1.05 1.46-2.51 1.3-3.98-1.26.05-2.78.84-3.68 1.89-.81.94-1.53 2.45-1.26 3.89 1.48.12 3.01-.75 3.64-1.8z" fill="#232946"/></svg>
+      Download on the App Store
+    </a>
+    <div class="features">
+      <div class="feature"><span class="feature-icon">🪄</span> Magic Mode & Ability Wheel</div>
+      <div class="feature"><span class="feature-icon">🤖</span> Stratekta AI Game Coach</div>
+      <div class="feature"><span class="feature-icon">🃏</span> Solo & Duo Game Modes</div>
+      <div class="feature"><span class="feature-icon">📶</span> 100% Offline Play</div>
+      <div class="feature"><span class="feature-icon">⚡</span> Fast, Adaptive AI</div>
+      <div class="feature"><span class="feature-icon">🎨</span> Sleek UI & Smooth Animations</div>
+      <div class="feature"><span class="feature-icon">🚫</span> Minimal Ads, No Disruptions</div>
+    </div>
+    <div class="contact">Contact: albenlabs@gmail.com</div>
+    <div style="margin-top:18px; font-size:0.95rem; color:#b3b8d0;">Privacy Policy: <a href="https://bunyaminmete.github.io/Spades-Privacy-Policy/" style="color:#FDEA24;" target="_blank">View</a></div>
+  </div>
+</body>
+</html>
